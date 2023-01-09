@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS with Mario Bros</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="mx-auto w-[1920px] xsm:w-full">
+        <nav class="flex items-center justify-between bg-gray-800 lg:justify-start">
+            <div class="w-1/6 p-2 logo">
+                <img src="img/logo.png" width="100" alt="">
+            </div>
+            <div class="hidden w-1/6 links lg:block md:w-4/6">
+                <ul class="flex items-center justify-center gap-5 menu">
+                    <li><a href="#" class="link">Home</a></li>
+                    <li><a href="#" class="link">Play Together</a></li>
+                    <li><a href="#" class="link">Explore</a></li>
+                    <li><a href="#" class="p-2 text-white transition duration-500 border-4 border-yellow-400 rounded-full nt-bold w- hover:bg-white hover:text-black">Bowser Fury</a></li>
+                    <li><a href="#" class="px-4 py-3 font-bold text-white transition duration-500 bg-red-500 rounded-full hover:text-black hover:bg-white">Buy Now</a></li>
+                </ul>
+            </div>
+
+            <div class="block w-1/6 lg:hidden lg:w-4/6">
+                <a href="#" class="link" id="mobile-menu">Menu</a>
+                <ul class="absolute left-0 z-50 hidden w-full text-center bg-gray-800 mobile-links">
+                    <li><a href="#" class="link">Home</a></li>
+                    <li><a href="#" class="link">Play Together</a></li>
+                    <li><a href="#" class="link">Explore</a></li>
+                    <li><a href="#" class="inline-block p-2 my-4 font-bold text-white transition duration-500 border-4 border-yellow-400 rounded-full hover:bg-white hover:text-black">Bowser Fury</a></li>
+                    <li><a href="#" class="inline-block px-4 py-3 my-4 font-bold text-white transition duration-500 bg-red-500 rounded-full hover:text-black hover:bg-white">Buy Now</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="header">
+            <img src="img/hero.jpg" alt="">
+        </section>
+
+        <section>
+            <div class="relative h-6 bg-repeat-x bg-wave-pattern -top-2"></div>
+            <div class="flex flex-col justify-center gap-3 p-4 text-center bg-wave-pattern-dots md:flex-row">
+                <a href="#" class="inline-block px-16 py-3 text-2xl font-bold text-white transition duration-200 bg-black border-8 border-transparent rounded-3xl hover:border-gray-200 hover:bg-white hover:text-black">Buy Now</a>
+                <a href="#" class="inline-block px-16 py-3 text-2xl font-bold text-white transition duration-200 bg-red-500 border-8 border-transparent rounded-3xl hover:border-gray-200 hover:bg-white hover:text-black">Watch the Trailer</a>
+            </div>
+
+            <div class="relative h-6 bg-repeat-x bg-wave-pattern top-2"></div>
+        </section>
+
+        <section class="bg-pattern-characters-red py-28">
+            <div class="gap-5 p-3 mx-auto lg:container md:flex md:w-full 2xl:w-3/5">
+
+                <div class="w-5/6 mx-auto bg-top bg-no-repeat bg-contain left bg-character-mario md:w-1/2 pt-52">
+                    <div class="mx-auto overflow-hidden text-center bg-white card 2xl:w-5/6 mt-72 rounded-2xl xl:w-4/5">
+                        <div class="bg-black cover">
+                            <video src="videos/video01.mp4" autoplay loop muted></video>
+                        </div>
+                        <div class="relative bg-repeat-x bg-wave-pattern content -top-3">
+                            <h3 class="py-10 text-4xl font-black">Play Together</h3>
+                            <p class="text-xl">
+                                Work with (or against) your friends and family*
+                            </p>
+
+                            <a href="#" class="inline-block px-16 py-2 my-4 font-black text-white transition duration-200 bg-red-500 border-8 border-transparent xl:text-2xl rounded-3xl hover:border-gray-50 hover:bg-white hover:text-black group">
+                                Watch the trailer
+                                <span class="inline-block w-4 h-4 transition-all transform rotate-45 border-t-4 border-r-4 border-yellow-300 border-solid group-hover:border-red-500 xl:group-hover:ml-4"></span>
+                            </a>
+                        </div>
+                        <div class="flex justify-between p-4 dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-5/6 mx-auto text-center right md:w-1/2">
+                    <h2 class="py-8 text-6xl font-black text-white">Available Now</h2>
+
+                    <p class="w-4/5 py-10 mx-auto text-2xl font-bold text-white">
+                        Team up for a paws-itively adorable adventure!
+                    </p>
+                    <p class="w-4/5 mx-auto text-center text-white">
+                        Bowser is up to his old tricks again and only Mario and his friends can save the day! Use power-ups like the Super Bell, which grants catlike abilities like climbing and scratching, to overcome Bowser and his minions.
+                    </p>
+
+                    <div class="mx-auto mt-16 overflow-hidden text-center bg-white card 2xl:w-5/6 rounded-2xl xl:w-4/5">
+                        <div class="bg-black cover">
+                            <video src="videos/video02.mp4" autoplay loop muted></video>
+                        </div>
+                        <div class="relative bg-repeat-x bg-wave-pattern content -top-3">
+                            <h3 class="py-10 text-4xl font-black">Explore</h3>
+                            <p class="text-xl">
+                                Prowl through some popular places.
+                            </p>
+
+                            <a href="#" class="boton group">
+                                Take a look!!!
+                                <span class="arrow group-hover:border-red-500 xl:group-hover:ml-4"></span>
+                            </a>
+                        </div>
+                        <div class="flex justify-between p-4 dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center pt-10 text-center footer gap-9">
+                <img src="img/coin.gif" alt="coin" class="coin">
+                <img src="img/coin.gif" alt="coin" class="coin">
+                <img src="img/coin.gif" alt="coin" class="coin">
+                <img src="img/coin.gif" alt="coin" class="hidden coin sm:block">
+                <img src="img/coin.gif" alt="coin" class="hidden coin sm:block">
+                <img src="img/coin.gif" alt="coin" class="hidden coin sm:block">
+            </div>
+
+        </section>
+
+        <section class="bg-yellow-dots">
+            <div class="relative h-6 bg-repeat-x bg-wave-pink -top-4"></div>
+
+            <div class="items-center justify-center w-2/3 py-6 mx-auto text-center sm:container xsm:w-full md:flex">
+                <div class="p-5 left xl:w-1/3 lg:w-1/2">
+                    <h3 class="font-black text-yellow-900 xsm:text-3xl sm:text-4xl">
+                        Cat <br> Transformation <br> Center
+                    </h3>
+
+                    <p class="py-4 text-xl">
+                        We’re not kitten—transform into a cat-tastic new you!
+                    </p>
+
+                    <p>
+                        <a href="#" class="boton group">
+                            Meow! <span class="arrow group-hover:border-red-500 xl:group-hover:ml-4"></span>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="right xl:w-2/3 lg:w-1/2">
+                    <img src="img/activity_img3.png" class="md:w-full" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-black">
+            <div class="relative h-6 bg-repeat-x bg-wave-pattern -top-4"></div>
+
+            <div class="container w-2/3 py-10 mx-auto text-center">
+                <div class="pb-5">
+                    <a href="" class="boton group">
+                        Customer Support
+                        <span class="arrow group-hover:border-red-500 xl:group-hover:ml-4"></span>
+                    </a>
+                </div>
+
+                <div class="text-white">
+                    <p class="py-2">
+                        *Additional games, systems and/or accessories may be required for multiplayer mode
+                    </p>
+                    <p class="py-2">
+                        ** Nintendo Switch Online membership (sold separately) and Nintendo Account required for online features. Not available in all countries. Internet access required for online features. A Nintendo Account is required to receive and redeem My Nintendo points. Terms apply. nintendo.com/switch-online.
+                    </p>
+                    <p class="py-2">
+                        Game, systems, some accessories and amiibo sold separately. Visit amiibo.com for details on amiibo functionality.
+                    </p>
+                    <p class="py-2">
+                        Nintendo Switch Lite plays all games that support handheld mode.
+                    </p>
+                    <p class="py-2">
+                        ©2013-2021 Nintendo. Super Mario and Nintendo Switch are trademarks of Nintendo.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const menuButton = document.querySelector('#mobile-menu');
+
+        menuButton.addEventListener('click', e => {
+            const menu = document.querySelector('.mobile-links');
+
+            menu.classList.toggle('hidden');
+        })
+    </script>
+</body>
+</html>
